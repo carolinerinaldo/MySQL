@@ -19,6 +19,11 @@ CREATE TABLE tb_pizzas(
 ALTER TABLE tb_pizzas ADD CONSTRAINT fk_pizzas_categorias
 FOREIGN KEY (categoriaid) REFERENCES tb_categorias (id);
 
+INSERT INTO tb_categorias (tipo, tamanho) VALUES
+('Salgada', 'Pequeno'),
+('Salgada', 'Médio'),
+('Doce', 'Grande');
+
 
 
 SELECT * FROM tb_pizzas;

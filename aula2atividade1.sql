@@ -58,4 +58,4 @@ ON tb_personagens.categoriaid = tb_classes.id;
 
 SELECT nome, habilidade, poder_ataque, poder_defesa, tb_classes.equipe
 FROM tb_personagens INNER JOIN tb_classes
-ON tb_personagens.categoriaid = tb_classes.id;
+ON tb_personagens.categoriaid = tb_classes.id WHERE equipe = 'Preto';
